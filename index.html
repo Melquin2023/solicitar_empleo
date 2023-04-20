@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class=" container1 " >
+        <div class=" header">
+    <h2>Solicitar Empleo</h2>
+
+    
+
+<form id="dataForm" class="formulario">
+    <ul style="list-style: none;">
+     <li >
+       <label for="name">Nombres y Apellidos :</label>
+       <input type="text"required  id="name" name="user_name">
+     </li>
+     <li>
+        <label for="aspiracion">Aspiracion Salarial</label>
+        <input type="number" required id="aspiracion" name="aspiracion" placeholder="$">
+      </li>
+     <li>
+       <label for="mail">Correo electrónico:</label>
+       <input type="email" required id="mail" name="user_mail">
+     </li>
+     <li>
+        Genero
+        <select name="genero" id="genero" required onchange="cambioColor()">
+
+            <option value="masculino">Masculino</option>
+      
+            <option value="femenino">Femenino</option>
+      
+        </select>
+      </li>
+      <li>
+        Cargo a Ocupar
+        <select name="categoria" multiple="categorias[]" onchange="habilitarOtro()" id="select">
+
+          <option value="desarrolador">Desarrolador</option>
+
+          <option value="gerente">Gerente de Proyectos</option>
+
+          <option value="lider">Lider Administrativo</option>
+
+          <option value="conductor">Conductor</option>
+          
+          <option value="otro">Otro</option>
+
+    </select>
+    <input type="text" id="otro" placeholder="otro" hidden>
+      </li>
+     
+    </ul>
+    <button id="enviar" class="azul" onclick="guardar()" >Enviar</button>
+   </form>
+   
+</div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

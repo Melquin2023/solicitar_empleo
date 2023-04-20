@@ -1,0 +1,10 @@
+se le solicita al aspirante la construccion de un formulario, con las siguientes caracteristicas.
+1. nombres y apellidos
+2. aspiracion salarial.
+3. correo electronico.
+4. genero
+5. cargo a ocupar. * entre los cargos diponibles van a tener, desarrollador, gerente de proyecto, lider administrativo,
+conductor, otro), en caso dado q se seleccione otro, este debe habilitar otro campo q le permita al usuario escribir el cargo. 
+Al dar click en boton guardar, este debe almecenar en un tipo JS en una lista [{}], y debera vaciar el formulario para un nuevo registro. 
+
+restricciones: todos los campos deben ser obligatorios. Si el genéro es masculino, el boton para subir la informacion el boton de color, si es femenino el boton es de color rosado. 
